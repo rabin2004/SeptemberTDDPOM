@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [First Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="menuLink" value="Coupons"/>
+  <parameter name="check" value="Checking Use of Parameter"/>
+  <test thread-count="5" name="Regression Test(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+        <exclude name="Regression"/>
+        <exclude name="Integration"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testPkg.HomePageMenuLinkFunctionalityTest">
+        <methods>
+          <include name="closeApp"/>
+          <include name="backToHomePage"/>
+          <include name="quickMenuLinkTestThroughParameterziedXML" invocation-numbers="0"/>
+          <include name="load"/>
+        </methods>
+      </class> <!-- testPkg.HomePageMenuLinkFunctionalityTest -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [First Suite] -->

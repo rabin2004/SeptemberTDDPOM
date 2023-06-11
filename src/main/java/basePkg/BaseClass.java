@@ -57,4 +57,8 @@ public class BaseClass {
 	public void tearDown() {
 		driver.quit();
 	}
+	
+	public void navigateBack() {
+		driver.navigate().back();
+	}
 }

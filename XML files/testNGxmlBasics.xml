@@ -5,6 +5,7 @@
   <test name="Regression Test">
     <classes>
       <class name="testPkg.SearchFunctionalityTest"/>
+      <class name="testPkg.HomePageMenuLinkFunctionalityTest"/>
     </classes>
   </test> <!-- Test -->
   <test name="End to End Test">
